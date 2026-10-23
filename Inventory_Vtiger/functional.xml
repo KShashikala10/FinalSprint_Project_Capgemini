@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Vtiger Functional Suite">
+
+    <test name="Functional Tests">
+        <groups>
+            <run>
+                <include name="functional"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="PurchaseOrder.PurchaseOrderTest"/>
+            <class name="PriceBooks.PriceBooksPositiveTest"/>
+            <class name="Services.ServicesTest"/>
+            <class name="Vendors.VendorsTest"/>
+            <class name="Assests.AssestsTest"/>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,439 @@
+<html>
+<head>
+<title>TestNG:  Edge Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Edge Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>25/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Oct 18 00:43:13 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>999 seconds (999460 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Login.NegativeLoginTest.negativeLoginTest()'><b>negativeLoginTest</b><br>Test class: Login.NegativeLoginTest<br>Parameters: , , fail<br/>
+<a href="#Output-1931149523" onClick='toggleBox("Output-1931149523", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1931149523" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1931149523">
+Signout is successful<br/>
+Negative login test passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>Login.NegativeLoginTest@43c1b556</td></tr>
+<tr>
+<td title='PriceBooks.PriceBooksPositiveTest.createPriceBookWithProduct()'><b>createPriceBookWithProduct</b><br>Test class: PriceBooks.PriceBooksPositiveTest<br/>
+<a href="#Output-1149062449" onClick='toggleBox("Output-1149062449", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1149062449" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1149062449">
+Price Books page displayed successfully<br/>
+Create Price Book button clicked<br/>
+Currency selected: India, Rupees<br/>
+Save button clicked<br/>
+More Information tab clicked<br/>
+Products section expanded<br/>
+Select Products button clicked<br/>
+Product selected: akash<br/>
+Product added to Price Book<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>PriceBooks.PriceBooksPositiveTest@69453e37</td></tr>
+<tr>
+<td title='PriceBooks.PriceBooksNegativeTest.createPriceBookWithoutCurrencyTest()'><b>createPriceBookWithoutCurrencyTest</b><br>Test class: PriceBooks.PriceBooksNegativeTest<br/>
+<a href="#Output-33213034" onClick='toggleBox("Output-33213034", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-33213034" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-33213034">
+Price Books page displayed successfully<br/>
+Create Price Book button clicked<br/>
+Save button clicked<br/>
+Checked saving Price Book without currency<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>PriceBooks.PriceBooksNegativeTest@6f4a47c7</td></tr>
+<tr>
+<td title='PurchaseOrder.PurchaseOrderTest.searchPurchaseOrderTest()'><b>searchPurchaseOrderTest</b><br>Test class: PurchaseOrder.PurchaseOrderTest<br/>
+<a href="#Output-2071817388" onClick='toggleBox("Output-2071817388", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2071817388" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2071817388">
+Purchase Order search verified successfully<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>PurchaseOrder.PurchaseOrderTest@2002fc1d</td></tr>
+<tr>
+<td title='PriceBooks.PriceBooksPositiveTest.createPriceBookWithDescription()'><b>createPriceBookWithDescription</b><br>Test class: PriceBooks.PriceBooksPositiveTest<br/>
+<a href="#Output-146036837" onClick='toggleBox("Output-146036837", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-146036837" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-146036837">
+Price Books page displayed successfully<br/>
+Create Price Book button clicked<br/>
+Currency selected: India, Rupees<br/>
+Save button clicked<br/>
+Price Book created successfully: PB_Description_Test<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>PriceBooks.PriceBooksPositiveTest@69453e37</td></tr>
+<tr>
+<td title='PriceBooks.PriceBooksPositiveTest.verifyCreatePriceBookForm()'><b>verifyCreatePriceBookForm</b><br>Test class: PriceBooks.PriceBooksPositiveTest<br/>
+<a href="#Output-1772819767" onClick='toggleBox("Output-1772819767", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1772819767" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1772819767">
+Price Books page displayed successfully<br/>
+Create Price Book button clicked<br/>
+Create Price Book form displayed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>PriceBooks.PriceBooksPositiveTest@69453e37</td></tr>
+<tr>
+<td title='Login.NegativeLoginTest.negativeLoginTest()'><b>negativeLoginTest</b><br>Test class: Login.NegativeLoginTest<br>Parameters: smith, admin, fail<br/>
+<a href="#Output-1965261884" onClick='toggleBox("Output-1965261884", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1965261884" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1965261884">
+Signout is successful<br/>
+Negative login test passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>Login.NegativeLoginTest@43c1b556</td></tr>
+<tr>
+<td title='Vendor.VendorsTest.searchVendorByNameTest()'><b>searchVendorByNameTest</b><br>Test class: Vendor.VendorsTest<br/>
+<a href="#Output-607128943" onClick='toggleBox("Output-607128943", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-607128943" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-607128943">
+Vendors page displayed successfully<br/>
+Vendor search completed for: 28CoffeeDay<br/>
+Vendor search test completed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>Vendor.VendorsTest@3d34d211</td></tr>
+<tr>
+<td title='PriceBooks.PriceBooksNegativeTest.createPriceBookWithoutNameTest()'><b>createPriceBookWithoutNameTest</b><br>Test class: PriceBooks.PriceBooksNegativeTest<br/>
+<a href="#Output-1256678790" onClick='toggleBox("Output-1256678790", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1256678790" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1256678790">
+Price Books page displayed successfully<br/>
+Create Price Book button clicked<br/>
+Currency selected: India, Rupees<br/>
+Save button clicked<br/>
+Checked saving Price Book without name<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>PriceBooks.PriceBooksNegativeTest@6f4a47c7</td></tr>
+<tr>
+<td title='PriceBooks.PriceBooksPositiveTest.createPriceBookForEditTest()'><b>createPriceBookForEditTest</b><br>Test class: PriceBooks.PriceBooksPositiveTest<br/>
+<a href="#Output-732592203" onClick='toggleBox("Output-732592203", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-732592203" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-732592203">
+Price Books page displayed successfully<br/>
+Create Price Book button clicked<br/>
+Currency selected: India, Rupees<br/>
+Save button clicked<br/>
+Price Book created successfully: PB_Edit_Test_Original<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>PriceBooks.PriceBooksPositiveTest@69453e37</td></tr>
+<tr>
+<td title='Service.ServicesTest.updateServiceDescriptionTest()'><b>updateServiceDescriptionTest</b><br>Test class: Service.ServicesTest<br/>
+<a href="#Output-447059015" onClick='toggleBox("Output-447059015", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-447059015" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-447059015">
+Service description updated successfully<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Service.ServicesTest@ae13544</td></tr>
+<tr>
+<td title='PurchaseOrder.PurchaseOrderTest.editPurchaseOrderTest()'><b>editPurchaseOrderTest</b><br>Test class: PurchaseOrder.PurchaseOrderTest<br/>
+<a href="#Output-2014367028" onClick='toggleBox("Output-2014367028", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2014367028" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2014367028">
+Purchase Order updated successfully<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>PurchaseOrder.PurchaseOrderTest@2002fc1d</td></tr>
+<tr>
+<td title='Login.NegativeLoginTest.negativeLoginTest()'><b>negativeLoginTest</b><br>Test class: Login.NegativeLoginTest<br>Parameters: admin, admin, pass</td>
+<td></td>
+<td>0</td>
+<td>Login.NegativeLoginTest@43c1b556</td></tr>
+<tr>
+<td title='Login.NegativeLoginTest.negativeLoginTest()'><b>negativeLoginTest</b><br>Test class: Login.NegativeLoginTest<br>Parameters: admin, ertyui, fail<br/>
+<a href="#Output-1030117197" onClick='toggleBox("Output-1030117197", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1030117197" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1030117197">
+Signout is successful<br/>
+Negative login test passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>Login.NegativeLoginTest@43c1b556</td></tr>
+<tr>
+<td title='Vendor.VendorsTest.createVendorTest()'><b>createVendorTest</b><br>Test class: Vendor.VendorsTest<br/>
+<a href="#Output-967018573" onClick='toggleBox("Output-967018573", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-967018573" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-967018573">
+Vendors page displayed successfully<br/>
+Create Vendor form opened<br/>
+Vendor name entered: UniqueVendor01<br/>
+GL Account selected: 300-Sales-Software<br/>
+Save button clicked<br/>
+Vendor creation test completed<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Vendor.VendorsTest@3d34d211</td></tr>
+<tr>
+<td title='Service.ServicesTest.searchServiceByNumberTest()'><b>searchServiceByNumberTest</b><br>Test class: Service.ServicesTest<br/>
+<a href="#Output-1238959080" onClick='toggleBox("Output-1238959080", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1238959080" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1238959080">
+Service SER208 displayed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>Service.ServicesTest@ae13544</td></tr>
+<tr>
+<td title='Vendor.VendorsTest.updateVendorWebsiteTest()'><b>updateVendorWebsiteTest</b><br>Test class: Vendor.VendorsTest<br/>
+<a href="#Output-1830732139" onClick='toggleBox("Output-1830732139", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1830732139" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1830732139">
+Vendors page displayed successfully<br/>
+Vendor search completed for: 28CoffeeDay<br/>
+Vendor opened: 28CoffeeDay<br/>
+Edit Vendor button clicked<br/>
+Vendor name entered: 28CoffeeDay<br/>
+Website updated to: https://updated-example.com<br/>
+Save button clicked<br/>
+Vendor Website updated and verified successfully<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>Vendor.VendorsTest@3d34d211</td></tr>
+<tr>
+<td title='Assests.AssetsTest.searchAssetByNoTest()'><b>searchAssetByNoTest</b><br>Test class: Assests.AssetsTest<br>Parameters: AST-FUN-03, jxhxij39, final_assest01, <br/>
+<a href="#Output-390514672" onClick='toggleBox("Output-390514672", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-390514672" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-390514672">
+Assets page is displayed<br/>
+Asset searched using Asset No: jxhxij39<br/>
+Matching Asset No displayed: jxhxij39<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Assests.AssetsTest@7dc0f706</td></tr>
+<tr>
+<td title='PriceBooks.PriceBooksPositiveTest.verifyPriceBookRegressionTest()'><b>verifyPriceBookRegressionTest</b><br>Test class: PriceBooks.PriceBooksPositiveTest<br/>
+<a href="#Output-828724765" onClick='toggleBox("Output-828724765", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-828724765" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-828724765">
+Price Books page displayed successfully<br/>
+Create Price Book button clicked<br/>
+Create Price Book form displayed successfully<br/>
+Currency selected: India, Rupees<br/>
+Save button clicked<br/>
+Price Book created successfully: PB_Regression_Test<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>PriceBooks.PriceBooksPositiveTest@69453e37</td></tr>
+<tr>
+<td title='Login.PositiveLoginTest.positiveLoginTest()'><b>positiveLoginTest</b><br>Test class: Login.PositiveLoginTest<br/>
+<a href="#Output-1163837028" onClick='toggleBox("Output-1163837028", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1163837028" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1163837028">
+Positive login test passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Login.PositiveLoginTest@4009e306</td></tr>
+<tr>
+<td title='Assests.AssetsTest.cancelAssetEditTest()'><b>cancelAssetEditTest</b><br>Test class: Assests.AssetsTest<br/>
+<a href="#Output-968392067" onClick='toggleBox("Output-968392067", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-968392067" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-968392067">
+Assets page is displayed<br/>
+Asset searched using Asset No: jxhxij39<br/>
+Matching Asset No displayed: jxhxij39<br/>
+Asset Edit page opened for: jxhxij39<br/>
+Temporary Asset Name entered: Cancel Test Laptop<br/>
+Cancel button clicked<br/>
+Asset searched using Asset No: jxhxij39<br/>
+Original Asset Name remains unchanged: final_assest01<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Assests.AssetsTest@7dc0f706</td></tr>
+<tr>
+<td title='PriceBooks.PriceBooksPositiveTest.verifyPriceBookSystemFlow()'><b>verifyPriceBookSystemFlow</b><br>Test class: PriceBooks.PriceBooksPositiveTest<br/>
+<a href="#Output-1254714034" onClick='toggleBox("Output-1254714034", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1254714034" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1254714034">
+Price Books page displayed successfully<br/>
+Create Price Book button clicked<br/>
+Currency selected: India, Rupees<br/>
+Save button clicked<br/>
+Price Book created successfully: PB_System_Test<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>PriceBooks.PriceBooksPositiveTest@69453e37</td></tr>
+<tr>
+<td title='PriceBooks.PriceBooksPositiveTest.editPriceBookTest()'><b>editPriceBookTest</b><br>Test class: PriceBooks.PriceBooksPositiveTest<br/>
+<a href="#Output-271559699" onClick='toggleBox("Output-271559699", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-271559699" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-271559699">
+Price Books page displayed successfully<br/>
+Price Book name updated to: PB_Description_Updated<br/>
+Save button clicked<br/>
+Price Book edit action completed<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>PriceBooks.PriceBooksPositiveTest@69453e37</td></tr>
+<tr>
+<td title='Assests.AssetsTest.searchAssetByNoTest()'><b>searchAssetByNoTest</b><br>Test class: Assests.AssetsTest<br>Parameters: AST-REG-03, jxhxij39, final_assest01, Cancel Test Laptop<br/>
+<a href="#Output-527304720" onClick='toggleBox("Output-527304720", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-527304720" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-527304720">
+Assets page is displayed<br/>
+Asset searched using Asset No: jxhxij39<br/>
+Matching Asset No displayed: jxhxij39<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>Assests.AssetsTest@7dc0f706</td></tr>
+<tr>
+<td title='PriceBooks.PriceBooksPositiveTest.verifyPriceBooksPage()'><b>verifyPriceBooksPage</b><br>Test class: PriceBooks.PriceBooksPositiveTest<br/>
+<a href="#Output-1314129770" onClick='toggleBox("Output-1314129770", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1314129770" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1314129770">
+Price Books page displayed successfully<br/>
+Price Books page verified successfully<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>PriceBooks.PriceBooksPositiveTest@69453e37</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,582 @@
+<html>
+<head>
+<title>TestNG:  Firefox Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Firefox Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>23/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Oct 18 00:43:13 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>1159 seconds (1159962 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Vendor.VendorsTest.updateVendorWebsiteTest()'><b>updateVendorWebsiteTest</b><br>Test class: Vendor.VendorsTest<br/>
+<a href="#Output-1537080313" onClick='toggleBox("Output-1537080313", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1537080313" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1537080313">
+Vendors page displayed successfully<br/>
+Vendor search completed for: 28CoffeeDay<br/>
+Vendor opened: 28CoffeeDay<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: Unexpected alert dialog detected. Performed handler &quot;dismiss&quot;: undefined
+Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [11c66319-cce4-4b73-b4bc-9d210e3c112b, findElement {using=xpath, value=//a[contains(@href,&apos;action=EditView&apos;) and contains(@href,&apos;module=Vendors&apos;)]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 157.0, moz:accessibilityChecks: false, moz:buildID: 20260924084938, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20452, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 11c66319-cce4-4b73-b4bc-9d210e3c112b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:141)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:400)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:793)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:786)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:210)
+	at Object_repo.VendorsPage.clickEditVendor(VendorsPage.java:304)
+	at Vendor.VendorsTest.updateVendorWebsiteTest(VendorsTest.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1537080313", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1537080313'><pre>org.openqa.selenium.UnhandledAlertException: Unexpected alert dialog detected. Performed handler &quot;dismiss&quot;: undefined
+Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [11c66319-cce4-4b73-b4bc-9d210e3c112b, findElement {using=xpath, value=//a[contains(@href,&apos;action=EditView&apos;) and contains(@href,&apos;module=Vendors&apos;)]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 157.0, moz:accessibilityChecks: false, moz:buildID: 20260924084938, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20452, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 11c66319-cce4-4b73-b4bc-9d210e3c112b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:141)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:400)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:793)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:786)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:210)
+	at Object_repo.VendorsPage.clickEditVendor(VendorsPage.java:304)
+	at Vendor.VendorsTest.updateVendorWebsiteTest(VendorsTest.java:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>2</td>
+<td>Vendor.VendorsTest@70325e14</td></tr>
+<tr>
+<td title='Service.ServicesTest.updateServiceDescriptionTest()'><b>updateServiceDescriptionTest</b><br>Test class: Service.ServicesTest</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: Unexpected alert dialog detected. Performed handler &quot;dismiss&quot;: undefined
+Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [08f835d7-ca44-4b69-978f-0b2536870706, findElement {using=name, value=Edit}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 157.0, moz:accessibilityChecks: false, moz:buildID: 20260924084938, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 1504, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 08f835d7-ca44-4b69-978f-0b2536870706
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:141)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:400)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at Object_repo.ServicesPage.clickEdit(ServicesPage.java:74)
+	at Service.ServicesTest.updateServiceDescriptionTest(ServicesTest.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace283953666", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace283953666'><pre>org.openqa.selenium.UnhandledAlertException: Unexpected alert dialog detected. Performed handler &quot;dismiss&quot;: undefined
+Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [08f835d7-ca44-4b69-978f-0b2536870706, findElement {using=name, value=Edit}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 157.0, moz:accessibilityChecks: false, moz:buildID: 20260924084938, moz:geckodriverVersion: 0.37.1, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 1504, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 08f835d7-ca44-4b69-978f-0b2536870706
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:141)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:400)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at Object_repo.ServicesPage.clickEdit(ServicesPage.java:74)
+	at Service.ServicesTest.updateServiceDescriptionTest(ServicesTest.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>2</td>
+<td>Service.ServicesTest@23348b5d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Login.NegativeLoginTest.negativeLoginTest()'><b>negativeLoginTest</b><br>Test class: Login.NegativeLoginTest<br>Parameters: admin, ertyui, fail<br/>
+<a href="#Output-721122619" onClick='toggleBox("Output-721122619", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-721122619" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-721122619">
+Signout is successful<br/>
+Negative login test passed<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Login.NegativeLoginTest@20d525</td></tr>
+<tr>
+<td title='Service.ServicesTest.searchServiceByNumberTest()'><b>searchServiceByNumberTest</b><br>Test class: Service.ServicesTest<br/>
+<a href="#Output-2100925240" onClick='toggleBox("Output-2100925240", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2100925240" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2100925240">
+Service SER208 displayed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Service.ServicesTest@23348b5d</td></tr>
+<tr>
+<td title='PurchaseOrder.PurchaseOrderTest.searchPurchaseOrderTest()'><b>searchPurchaseOrderTest</b><br>Test class: PurchaseOrder.PurchaseOrderTest<br/>
+<a href="#Output-798310327" onClick='toggleBox("Output-798310327", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-798310327" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-798310327">
+Purchase Order search verified successfully<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>PurchaseOrder.PurchaseOrderTest@55b0dcab</td></tr>
+<tr>
+<td title='Vendor.VendorsTest.searchVendorByNameTest()'><b>searchVendorByNameTest</b><br>Test class: Vendor.VendorsTest<br/>
+<a href="#Output-1274435317" onClick='toggleBox("Output-1274435317", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1274435317" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1274435317">
+Vendors page displayed successfully<br/>
+Vendor search completed for: 28CoffeeDay<br/>
+Vendor search test completed<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Vendor.VendorsTest@70325e14</td></tr>
+<tr>
+<td title='PriceBooks.PriceBooksPositiveTest.createPriceBookWithDescription()'><b>createPriceBookWithDescription</b><br>Test class: PriceBooks.PriceBooksPositiveTest<br/>
+<a href="#Output-1437702002" onClick='toggleBox("Output-1437702002", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1437702002" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1437702002">
+Price Books page displayed successfully<br/>
+Create Price Book button clicked<br/>
+Currency selected: India, Rupees<br/>
+Save button clicked<br/>
+Price Book created successfully: PB_Description_Test<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>PriceBooks.PriceBooksPositiveTest@38afe297</td></tr>
+<tr>
+<td title='PriceBooks.PriceBooksPositiveTest.verifyPriceBookRegressionTest()'><b>verifyPriceBookRegressionTest</b><br>Test class: PriceBooks.PriceBooksPositiveTest<br/>
+<a href="#Output-279065031" onClick='toggleBox("Output-279065031", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-279065031" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-279065031">
+Price Books page displayed successfully<br/>
+Create Price Book button clicked<br/>
+Create Price Book form displayed successfully<br/>
+Currency selected: India, Rupees<br/>
+Save button clicked<br/>
+Price Book created successfully: PB_Regression_Test<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>PriceBooks.PriceBooksPositiveTest@38afe297</td></tr>
+<tr>
+<td title='Assests.AssetsTest.cancelAssetEditTest()'><b>cancelAssetEditTest</b><br>Test class: Assests.AssetsTest<br/>
+<a href="#Output-1495672608" onClick='toggleBox("Output-1495672608", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1495672608" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1495672608">
+Assets page is displayed<br/>
+Asset searched using Asset No: jxhxij39<br/>
+Matching Asset No displayed: jxhxij39<br/>
+Asset Edit page opened for: jxhxij39<br/>
+Temporary Asset Name entered: Cancel Test Laptop<br/>
+Cancel button clicked<br/>
+Asset searched using Asset No: jxhxij39<br/>
+Original Asset Name remains unchanged: final_assest01<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Assests.AssetsTest@37ceb1df</td></tr>
+<tr>
+<td title='Login.NegativeLoginTest.negativeLoginTest()'><b>negativeLoginTest</b><br>Test class: Login.NegativeLoginTest<br>Parameters: smith, admin, fail<br/>
+<a href="#Output-155419780" onClick='toggleBox("Output-155419780", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-155419780" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-155419780">
+Signout is successful<br/>
+Negative login test passed<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Login.NegativeLoginTest@20d525</td></tr>
+<tr>
+<td title='Login.PositiveLoginTest.positiveLoginTest()'><b>positiveLoginTest</b><br>Test class: Login.PositiveLoginTest<br/>
+<a href="#Output-1985219388" onClick='toggleBox("Output-1985219388", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1985219388" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1985219388">
+Positive login test passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Login.PositiveLoginTest@7c9d8e2</td></tr>
+<tr>
+<td title='PriceBooks.PriceBooksPositiveTest.createPriceBookForEditTest()'><b>createPriceBookForEditTest</b><br>Test class: PriceBooks.PriceBooksPositiveTest<br/>
+<a href="#Output-155238952" onClick='toggleBox("Output-155238952", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-155238952" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-155238952">
+Price Books page displayed successfully<br/>
+Create Price Book button clicked<br/>
+Currency selected: India, Rupees<br/>
+Save button clicked<br/>
+Price Book created successfully: PB_Edit_Test_Original<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>PriceBooks.PriceBooksPositiveTest@38afe297</td></tr>
+<tr>
+<td title='PriceBooks.PriceBooksPositiveTest.verifyPriceBooksPage()'><b>verifyPriceBooksPage</b><br>Test class: PriceBooks.PriceBooksPositiveTest<br/>
+<a href="#Output-315850554" onClick='toggleBox("Output-315850554", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-315850554" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-315850554">
+Price Books page displayed successfully<br/>
+Price Books page verified successfully<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>PriceBooks.PriceBooksPositiveTest@38afe297</td></tr>
+<tr>
+<td title='PriceBooks.PriceBooksNegativeTest.createPriceBookWithoutNameTest()'><b>createPriceBookWithoutNameTest</b><br>Test class: PriceBooks.PriceBooksNegativeTest<br/>
+<a href="#Output-56789071" onClick='toggleBox("Output-56789071", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-56789071" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-56789071">
+Price Books page displayed successfully<br/>
+Create Price Book button clicked<br/>
+Currency selected: India, Rupees<br/>
+Save button clicked<br/>
+Checked saving Price Book without name<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>PriceBooks.PriceBooksNegativeTest@2df3b89c</td></tr>
+<tr>
+<td title='PriceBooks.PriceBooksPositiveTest.createPriceBookWithProduct()'><b>createPriceBookWithProduct</b><br>Test class: PriceBooks.PriceBooksPositiveTest<br/>
+<a href="#Output-1680606657" onClick='toggleBox("Output-1680606657", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1680606657" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1680606657">
+Price Books page displayed successfully<br/>
+Create Price Book button clicked<br/>
+Currency selected: India, Rupees<br/>
+Save button clicked<br/>
+More Information tab clicked<br/>
+Products section expanded<br/>
+Select Products button clicked<br/>
+Product selected: akash<br/>
+Product added to Price Book<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>PriceBooks.PriceBooksPositiveTest@38afe297</td></tr>
+<tr>
+<td title='Login.NegativeLoginTest.negativeLoginTest()'><b>negativeLoginTest</b><br>Test class: Login.NegativeLoginTest<br>Parameters: , , fail<br/>
+<a href="#Output-1730111150" onClick='toggleBox("Output-1730111150", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1730111150" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1730111150">
+Signout is successful<br/>
+Negative login test passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>Login.NegativeLoginTest@20d525</td></tr>
+<tr>
+<td title='Assests.AssetsTest.searchAssetByNoTest()'><b>searchAssetByNoTest</b><br>Test class: Assests.AssetsTest<br>Parameters: AST-FUN-03, jxhxij39, final_assest01, <br/>
+<a href="#Output-1625965247" onClick='toggleBox("Output-1625965247", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1625965247" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1625965247">
+Assets page is displayed<br/>
+Asset searched using Asset No: jxhxij39<br/>
+Matching Asset No displayed: jxhxij39<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Assests.AssetsTest@37ceb1df</td></tr>
+<tr>
+<td title='PurchaseOrder.PurchaseOrderTest.editPurchaseOrderTest()'><b>editPurchaseOrderTest</b><br>Test class: PurchaseOrder.PurchaseOrderTest<br/>
+<a href="#Output-961868897" onClick='toggleBox("Output-961868897", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-961868897" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-961868897">
+Purchase Order updated successfully<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>PurchaseOrder.PurchaseOrderTest@55b0dcab</td></tr>
+<tr>
+<td title='PriceBooks.PriceBooksNegativeTest.createPriceBookWithoutCurrencyTest()'><b>createPriceBookWithoutCurrencyTest</b><br>Test class: PriceBooks.PriceBooksNegativeTest<br/>
+<a href="#Output-1237430292" onClick='toggleBox("Output-1237430292", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1237430292" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1237430292">
+Price Books page displayed successfully<br/>
+Create Price Book button clicked<br/>
+Save button clicked<br/>
+Checked saving Price Book without currency<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>PriceBooks.PriceBooksNegativeTest@2df3b89c</td></tr>
+<tr>
+<td title='Login.NegativeLoginTest.negativeLoginTest()'><b>negativeLoginTest</b><br>Test class: Login.NegativeLoginTest<br>Parameters: admin, admin, pass</td>
+<td></td>
+<td>0</td>
+<td>Login.NegativeLoginTest@20d525</td></tr>
+<tr>
+<td title='Assests.AssetsTest.searchAssetByNoTest()'><b>searchAssetByNoTest</b><br>Test class: Assests.AssetsTest<br>Parameters: AST-REG-03, jxhxij39, final_assest01, Cancel Test Laptop<br/>
+<a href="#Output-1194709481" onClick='toggleBox("Output-1194709481", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1194709481" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1194709481">
+Assets page is displayed<br/>
+Asset searched using Asset No: jxhxij39<br/>
+Matching Asset No displayed: jxhxij39<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Assests.AssetsTest@37ceb1df</td></tr>
+<tr>
+<td title='Vendor.VendorsTest.createVendorTest()'><b>createVendorTest</b><br>Test class: Vendor.VendorsTest<br/>
+<a href="#Output-2040409187" onClick='toggleBox("Output-2040409187", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2040409187" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2040409187">
+Vendors page displayed successfully<br/>
+Create Vendor form opened<br/>
+Vendor name entered: UniqueVendor01<br/>
+GL Account selected: 300-Sales-Software<br/>
+Save button clicked<br/>
+Vendor creation test completed<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Vendor.VendorsTest@70325e14</td></tr>
+<tr>
+<td title='PriceBooks.PriceBooksPositiveTest.verifyPriceBookSystemFlow()'><b>verifyPriceBookSystemFlow</b><br>Test class: PriceBooks.PriceBooksPositiveTest<br/>
+<a href="#Output-1827147829" onClick='toggleBox("Output-1827147829", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1827147829" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1827147829">
+Price Books page displayed successfully<br/>
+Create Price Book button clicked<br/>
+Currency selected: India, Rupees<br/>
+Save button clicked<br/>
+Price Book created successfully: PB_System_Test<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>PriceBooks.PriceBooksPositiveTest@38afe297</td></tr>
+<tr>
+<td title='PriceBooks.PriceBooksPositiveTest.verifyCreatePriceBookForm()'><b>verifyCreatePriceBookForm</b><br>Test class: PriceBooks.PriceBooksPositiveTest<br/>
+<a href="#Output-1767324329" onClick='toggleBox("Output-1767324329", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1767324329" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1767324329">
+Price Books page displayed successfully<br/>
+Create Price Book button clicked<br/>
+Create Price Book form displayed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>PriceBooks.PriceBooksPositiveTest@38afe297</td></tr>
+<tr>
+<td title='PriceBooks.PriceBooksPositiveTest.editPriceBookTest()'><b>editPriceBookTest</b><br>Test class: PriceBooks.PriceBooksPositiveTest<br/>
+<a href="#Output-1491842484" onClick='toggleBox("Output-1491842484", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1491842484" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1491842484">
+Price Books page displayed successfully<br/>
+Price Book name updated to: PB_Description_Updated<br/>
+Save button clicked<br/>
+Price Book edit action completed<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>PriceBooks.PriceBooksPositiveTest@38afe297</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Vtiger Parallel Suite"
+       parallel="classes"
+       thread-count="4">
+
+    <test name="Parallel Module Tests">
+        <classes>
+            <class name="PurchaseOrder.PurchaseOrderTest"/>
+            <class name="PriceBooks.PriceBooksPositiveTest"/>
+             <class name="PriceBooks.PriceBooksNegativeTest"/>
+            <class name="Service.ServicesTest"/>
+            <class name="Vendor.VendorsTest"/>
+            <class name="Assests.AssestsTest"/>
+            <class name="Login.PositiveLoginTest"/>
+            <class name="Login.NegativeLoginTest"/>
+        </classes>
+    </test>
+
+</suite>
